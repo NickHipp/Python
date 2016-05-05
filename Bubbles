@@ -1,0 +1,7 @@
+def bubbleSort(inList):
+    lengthN=len(inList)
+    for i in range(lengthN):
+        for j in range(i+1,lengthN):
+            if inList[j] < inList[i]:
+                inList[j],inList[i] = inList[i],inList[j]
+    return inList
